@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "django_depp/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "django_depp/wsgi.py"
+      }
+    ]
+  }
